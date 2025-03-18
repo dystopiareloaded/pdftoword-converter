@@ -4,10 +4,36 @@ from fpdf import FPDF
 from docx import Document
 
 
-# Title and Creator Info
+# Apply custom styling
+st.markdown(
+    """
+    <style>
+        .main {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+        }
+        .stButton>button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .stButton>button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-st.title("PDF to Word & Word to PDF Converter")
-st.write("### Created by Kaustav Roy Chowdhury")
+# Colorful Header
+st.markdown('<div class="main"><h1>PDF to Word & Word to PDF Converter</h1><h3>Created by Kaustav Roy Chowdhury</h3></div>', unsafe_allow_html=True)
 
 # Upload File
 
