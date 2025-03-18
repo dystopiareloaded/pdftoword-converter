@@ -9,11 +9,11 @@ st.markdown(
     """
     <style>
         .main {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            background: #d3d3d3;
             padding: 20px;
             border-radius: 15px;
             text-align: center;
-            color: white;
+            color: black;
         }
         .stButton>button {
             background-color: #4CAF50;
